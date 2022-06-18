@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myFun=()=>{
+            var hi=document.getElementById('find')
+            alert(hi.innerHTML)
+            hi.innerHTML="Gopi learning JS"
+        }
+        let myFun1=()=>{
+            var hi=document.getElementById('find')
+            alert(hi.innerHTML)
+            hi.innerHTML="Gopi learning JS with fat arrow"
+        }
+    </script>
+</head>
+<body>
+    <h1>Head section</h1>
+    <ul onmouseenter="myFun()" onmouseleave="myFun1()" style="background-color: blue;color:white;">
+        <li>list Item 1</li>
+        <li>list Item 2</li>
+        <li id="find">list Item 3</li>
+        <li>list Item 4</li>
+    </ul>
+</body>
+</html>

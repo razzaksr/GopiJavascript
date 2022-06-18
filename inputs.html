@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- user input -->
+    <script>
+        let alpha=prompt("Tell us the product data ","")
+        alpha*=alpha
+        document.write(alpha+" "+typeof(alpha))
+
+        alpha=String(alpha)
+        document.write(alpha+" "+typeof(alpha))
+
+        alpha=Object(alpha)
+        document.write(alpha+" "+typeof(alpha))
+
+        alpha=Array(alpha)
+        document.write(alpha+" "+typeof(alpha))
+    </script>
+</body>
+</html>
