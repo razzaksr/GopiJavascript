@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="funs.js"></script>
+</head>
+<body>
+    <button onmousedown="apple()" ondblclick="banana()">MyButton</button>
+    <button ondblclick="banana()">MyButton2</button>
+    <button ondblclick="banana('Razak',3)">MyButton3</button>
+    <button style="background-color: red;color: white;" 
+        onclick="cupCake()">
+        MyButton4
+    </button>
+    <button style="background-color: cyan;color: black;" 
+        onclick="cupCake('Shahul','Hameed')">
+        MyButton5
+    </button>
+    <h1 onmouseenter="alert(donut().app)">Hi</h1>
+
+    <script>
+        function hey(){
+            const v=donut()
+            var items=document.getElementsByTagName('li')
+            alert(items[0].innerHTML+" "+items[1].innerHTML+" "+items[2].innerHTML)
+            items[0].innerHTML=v.app;items[1].innerHTML=v.org;items[2].innerHTML=v.built;
+        }
+    </script>
+
+    Profile
+    <ol onmouseenter="hey()">
+        <li>App Name</li>
+        <li>App Organization</li>
+        <li>App Year</li>
+    </ol>
+</body>
+</html>
