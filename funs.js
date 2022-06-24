@@ -13,3 +13,7 @@ const cupCake=(alpha=2,gamma=10)=>{
 const donut=()=>{
     return {"app":"insta","org":"omega","built":2020}
 }
+
+const eclairs=(cosmo,delta)=>{
+    return (cosmo/delta);
+}
